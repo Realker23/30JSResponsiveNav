@@ -1,0 +1,144 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    background: rgb(35, 13, 70);
+    padding: 3rem;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    height: 10rem;
+    box-shadow: 0 1px 10px 10px rgba(0, 0, 0 , .2);
+    position: relative;
+}
+
+
+
+.logo{
+    flex: 1;
+    font-size: 2rem;
+}
+
+.navItem ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navItem ul li {
+    padding: 1.5rem;
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.menu{
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 1rem;
+    display: none;
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+}
+
+
+.navItem ul li:hover{
+    background: rgb(100, 40, 197);
+}
+
+.line2{
+    width: 2.5rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+}
+
+.line1{
+    
+    width: 2.5rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    
+}
+
+.line3{
+    
+    width: 2.5rem;
+    height: 0.2rem;
+    background: #fff;
+    margin: auto;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    
+}
+
+.r1{
+    transform: rotate(-45deg);
+    top:22px;
+    left:12px
+}
+
+.v{
+    display: none;
+}
+
+.r2{
+    transform: rotate(45deg);
+    top:22px;
+    left:12px
+}
+
+
+
+
+
+@media (width<=600px){
+    .menu{
+        display: block;
+    }
+    .navItem{
+        
+        position: absolute;
+        background: rgb(35, 13, 70);
+        width: 100%;
+        left: 0;
+        z-index: -1;
+        top: -120px;
+        transition: all 0.3s ease;
+    }
+    .block{
+        top: 100px;
+    }
+    .navItem ul {
+        flex-direction: column;
+    }
+}
